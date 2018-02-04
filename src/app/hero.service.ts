@@ -8,7 +8,7 @@ import { MessageService } from './message.service';
 @Injectable()
 export class HeroService {
 
-  getHeros(): Observable<Hero[]> {
+  getHeroes(): Observable<Hero[]> {
     this.messageService.add('HeroService: Fetched heroes');
     return of(HEROES);
   }
